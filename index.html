@@ -1,13 +1,32 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ginger-web</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-black to-trasparent p-4 text-white px-7 py-2 flex items-center justify-between">
+  <img src="./img/LogoGinger.png" alt="" class ="w-32">
+  <div class="text-xl font-bold">
+  </div>
+  <!-- Botón hamburguesa (solo visible en móviles) -->
+  <button class="md:hidden block">
+    ☰
+  </button>
+  <!-- Links -->
+  <ul class="hidden md:flex space-x-25 mr-12">
+    <li><a href="#" class="hover:text-blue-200">Inicio</a></li>
+    <li><a href="#" class="hover:text-blue-200">Conocenos</a></li>
+    <li><a href="#" class="hover:text-blue-200">Productos</a></li>
+    <li><a href="#" class="hover:text-blue-200">Contacto</a></li>
+  </ul>
+  </nav>
+  <section class="relative h-screen bg-[url('/img/Fondo1.jpg')] bg-cover">
+    <div class="absolute inset-0 bg-black/50 flex justify-center items-center">
+      <img src="./img/LogoGinger.png" alt="" class="w-70" />
+    </div>
+  </section>
+</nav>
+</body>
 </html>
