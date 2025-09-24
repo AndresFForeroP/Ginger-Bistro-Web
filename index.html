@@ -15,18 +15,23 @@
   </button>
   <ul id="menu" class="hidden flex-col space-y-3 absolute top-16 left-65 p-6 m-1.5 w-auto bg-black/60
   md:flex md:flex-row md:space-x-25 md:space-y-0 md:static md:bg-transparent md:w-auto md:p-0 md:m-0 md:mr-10">
-  <li><a href="#" class="hover:text-blue-200">Inicio</a></li>
-  <li><a href="#" class="hover:text-blue-200">Conocenos</a></li>
-  <li><a href="#" class="hover:text-blue-200">Productos</a></li>
-  <li><a href="#" class="hover:text-blue-200">Contacto</a></li>
+    <li><a href="#" class="hover:text-blue-200">Inicio</a></li>
+    <li><a href="#" class="hover:text-blue-200">Conocenos</a></li>
+    <li><a href="#" class="hover:text-blue-200">Productos</a></li>
+    <li><a href="#" class="hover:text-blue-200">Contacto</a></li>
 </ul>
-
+<script>
+    const menuBtn = document.querySelector("nav button");
+    const menu = document.getElementById("menu");
+    menuBtn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+</script>
   </nav>
   <section class="relative h-screen bg-[url('/img/Fondo1.jpg')] bg-cover">
     <div class="absolute inset-0 bg-black/50 flex justify-center items-center">
       <img src="./img/LogoGinger.png" alt="" class="w-70" />
     </div>
   </section>
-  <script src="./src/menu.js"></script>
 </body>
 </html>
