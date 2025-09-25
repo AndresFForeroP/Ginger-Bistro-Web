@@ -38,6 +38,7 @@ const textos = card.querySelectorAll(".texto");
 
 card.addEventListener("click", () => {
   card.classList.toggle("pb-17");
+  card.classList.toggle("rounded-t-lg");
   logo.classList.toggle("w-70");
   titulo.classList.toggle("text-[14px]");
   titulo.classList.toggle("opacity-100");
