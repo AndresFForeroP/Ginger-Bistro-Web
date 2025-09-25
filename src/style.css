@@ -11,3 +11,7 @@
       #card {
         animation: breathing 3s ease-in-out infinite;
       }
+      #card:hover,
+      #card:active {
+        animation: none;
+      }
