@@ -11,39 +11,33 @@
 <body>
   <nav class="fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-black to-trasparent p-4 text-white px-5 py-2 flex items-center justify-between">
     <img src="./img/LogoGinger.png" alt="" class ="w-32">
-    <div class="text-xl font-bold">
-    </div>
-    <button class="md:hidden block">
-      ☰
-    </button>
+    <div class="text-xl font-bold"></div>
+    <button class="md:hidden block">☰</button>
     <ul id="menu" class="hidden flex-col space-y-3 absolute top-16 left-5/8 p-6 m-1.5 w-auto bg-black/60
     md:flex md:flex-row md:space-x-25 md:space-y-0 md:static md:bg-transparent md:w-auto md:p-0 md:m-0 md:mr-10">
-      <li><a href="#" class="font-slab hover:text-2xl duration-200 ease-in hover:text-orange-300">Inicio</a></li>
-      <li><a href="#" class="font-slab hover:text-2xl duration-200 ease-in hover:text-orange-300">Conocenos</a></li>
-      <li><a href="#" class="font-slab hover:text-2xl duration-200 ease-in hover:text-orange-300">Productos</a></li>
-      <li><a href="#" class="font-slab hover:text-2xl duration-200 ease-in hover:text-orange-300">Contacto</a></li>
+      <li><a href="#" class="font-slab hover:text-2xl duration-200 ease-in hover:text-orange-300 active:text-orange-300 active:bg-gray-500 active:rounded-full active:p-2">Inicio</a></li>
+      <li><a href="#" class="font-slab hover:text-2xl duration-200 ease-in hover:text-orange-300 active:text-orange-300 active:bg-gray-500 active:rounded-full active:p-2">Conocenos</a></li>
+      <li><a href="#" class="font-slab hover:text-2xl duration-200 ease-in hover:text-orange-300 active:text-orange-300 active:bg-gray-500 active:rounded-full active:p-2">Productos</a></li>
+      <li><a href="#" class="font-slab hover:text-2xl duration-200 ease-in hover:text-orange-300 active:text-orange-300 active:bg-gray-500 active:rounded-full active:p-2">Contacto</a></li>
     </ul>
-    <script>
-        const menuBtn = document.querySelector("nav button");
-        const menu = document.getElementById("menu");
-        menuBtn.addEventListener("click", () => {
-          menu.classList.toggle("hidden");
-        });
-    </script>
   </nav>
   <section class="relative h-screen bg-[url('/img/Fondo1.jpg')] bg-cover">
-    <div class="absolute inset-0 bg-black/55 flex justify-down items-center">
-      <div class="group m-auto bg-black/90 mt-80  rounded-full flex-col hover:pb-20 duration-500">
-        <img src="./img/LogoGinger.png" alt="" class="w-50 m-auto mt-10 ml-5 mr-5  group-hover:w-80 duration-500" />
-        <h1 class="text-[0px] group-hover:text-[14px] opacity-0 scale-0 transition duration-900 group-hover:opacity-100 group-hover:scale-100 text-white text-center mt-4">Bistronomia: lugar sencillo <br> comida excepcional.</h1>
-        <p class="text-[0px]  group-hover:text-[14px] opacity-0 scale-0 transition duration-1100 group-hover:opacity-100 group-hover:scale-100 text-white text-center mt-4">
-          🌟 Reserva ahora y vive la experiencia
+    <div class="absolute inset-0 bg-black/55 flex justify-center items-center">
+      <div id="card" class="group m-auto bg-black/90 mt-80 rounded-full flex-col hover:pb-20 duration-500 cursor-pointer">
+        <img src="./img/LogoGinger.png" alt=""
+            class="logo w-50 m-auto mt-10 ml-5 mr-5 group-hover:w-80 duration-500 transition-all" />
+        <h1 class="titulo text-[0px] group-hover:text-[14px] opacity-0 scale-0 transition duration-900 group-hover:opacity-100 group-hover:scale-100 text-white text-center mt-4">
+          Bistronomia: lugar sencillo <br> comida excepcional.
+        </h1>
+        <p class="texto text-[0px] group-hover:text-[14px] opacity-0 scale-0 transition duration-1100 group-hover:opacity-100 group-hover:scale-100 text-white text-center mt-4">
+          🌟 Vive la experiencia
         </p>
-        <p class="text-[0px] group-hover:text-[14px] opacity-0 scale-0 transition duration-1300 group-hover:opacity-100 group-hover:scale-100 text-white text-center mt-4">
+        <p class="texto text-[0px] group-hover:text-[14px] opacity-0 scale-0 transition duration-1300 group-hover:opacity-100 group-hover:scale-100 text-white text-center mt-4">
           🌿 Descubre nuestros sabores únicos
         </p>
       </div>
     </div>
   </section>
+  <script src="./src/principal.js"></script>
 </body>
 </html>
