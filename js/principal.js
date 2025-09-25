@@ -17,15 +17,15 @@ const menu = document.getElementById("menu");
 menuBtn.addEventListener("click", () => {
   menu.classList.toggle("hidden");
   if (getRotationDegrees(menuBtn) === 90) {
-    menuBtn.style.transition = "1s";
+    menuBtn.style.transition = "0.5s";
     menuBtn.style.transform = "rotateZ(0deg)";
-    menuBtn.classList.remove("bg-gray-500");
+    menuBtn.classList.remove("bg-gray-800");
     menuBtn.classList.remove("p-3");
     menuBtn.classList.remove("rounded-4xl");
   } else {
-    menuBtn.style.transition = "1s";
+    menuBtn.style.transition = "0.5s";
     menuBtn.style.transform = "rotateZ(90deg)";
-    menuBtn.classList.add("bg-gray-500");
+    menuBtn.classList.add("bg-gray-800");
     menuBtn.classList.add("p-3");
     menuBtn.classList.add("rounded-4xl");
   }
@@ -37,7 +37,7 @@ const titulo = card.querySelector(".titulo");
 const textos = card.querySelectorAll(".texto");
 
 card.addEventListener("click", () => {
-  card.classList.toggle("pb-20");
+  card.classList.toggle("pb-17");
   logo.classList.toggle("w-80");
   titulo.classList.toggle("text-[14px]");
   titulo.classList.toggle("opacity-100");
