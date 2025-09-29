@@ -43,7 +43,7 @@ export class GingerNavbar extends HTMLElement {
             render() {
                 this.innerHTML = `
                      <nav class="fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-black to-trasparent p-4 text-white px-5 py-2 flex items-center justify-between">
-                        <img src="./img/LogoGinger.png" alt="" class ="w-32">
+                        <img src="https://i.ibb.co/rf7kwSsk/Logo-Ginger.png" alt="" class ="w-32">
                         <div class="text-xl font-bold"></div>
                         <button class="md:hidden block text-2xl">☰</button>
                         <ul id="menu" class="hidden flex-col space-y-3 absolute top-17 left-5/8 p-6 m-1.5 w-auto bg-black/60
