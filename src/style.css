@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root{
-  background-color: black;
+  background-color: rgb(17, 16, 16);
 }
 @keyframes breathing {
         0%   { transform: scale(1); }
